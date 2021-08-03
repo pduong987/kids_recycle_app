@@ -1,6 +1,6 @@
 <h1>Listing</h1>
 <ul>
 <% @listings.each do |item|%>
-    <li><%= item.name%></li>
+    <li><%= item.name%> (<%= item.description%>)</li>
  <% end %>
  </ul>

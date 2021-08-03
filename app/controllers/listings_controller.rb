@@ -14,9 +14,19 @@ class ListingsController < ApplicationController
   end
 
   def swap
+
   end
 
   def free
+    @listing = Listing.all
+    @listing_free = []
+    @listing.each do |item|
+      if item.price <= 0 
+        @listing_free.push(item)
+      end
+    end
+
+    @listing = @listing_free
   end
 
   def create
@@ -28,6 +38,7 @@ class ListingsController < ApplicationController
     @listing.name = params[:name]
     @listing.price = params[:price].to_f
     @listing.status = params[:status]
+    @listing.description = params[:description]
     
     # Save the object. It only goes into database here!
     if @listing.save
