@@ -1,2 +1,6 @@
-<h1>Listings#buy</h1>
-<p>Find me in app/views/listings/buy.html.erb</p>
+<h1>Listing</h1>
+<ul>
+<% @listings.each do |item|%>
+    <li><%= item.name%></li>
+ <% end %>
+ </ul>
