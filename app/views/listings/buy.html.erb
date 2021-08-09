@@ -1,0 +1,7 @@
+<h1>Listing</h1>
+<ul>
+<%# Loop through list of item to get name and description %>
+<% @listings.each do |item|%>
+    <li><%= item.name%> (<%= item.description%>)</li>
+ <% end %>
+ </ul>
