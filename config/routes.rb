@@ -1,12 +1,3 @@
 Rails.application.routes.draw do
-  devise_for :users
-  get 'listings/index'
-  get 'listings/buy'
-  get 'listings/sell'
-  get 'listings/swap'
-  get 'listings/free'
-  post 'listings/create'
-  # Make home page
-  root 'home#page'
-
+  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end

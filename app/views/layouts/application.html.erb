@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>KidsRecycle</title>
+    <title>Src</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,11 +10,6 @@
   </head>
 
   <body>
-    <%= render 'partials/navbar'%>
-    <%= render 'partials/search'%>
-    <%= render 'partials/footer'%>
-    <p class="alert"><%= alert %></p>
     <%= yield %>
-    <%= render 'partials/footer'%>
   </body>
 </html>
